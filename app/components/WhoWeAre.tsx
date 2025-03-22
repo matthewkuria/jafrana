@@ -15,7 +15,7 @@ const WhoWeAre = () => {
                     <p className="text-quaternary">Experience</p>
                 </div>
             </div>
-            <div className="flex flex-col justify-end  items-start   p-4 md:max-w-1/2 mt-5">
+            <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
                 <p className={`${bebas_neue.className} text-2xl text-primary`}>Who We Are</p>
                 <p className={`${redHatText.className} font-bold`}>We Are The Best Construction Company</p>
                 <p className="text-secondary">
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
                     With years of experience in the construction industry,
                     we pride ourselves on delivering high-quality craftsmanship,
                     innovative designs, and exceptional customer service. Whether
-                    it's building your dream home or creating a functional office space,
+                    it is building your dream home or creating a functional office space,
                     we are committed to excellence in every project we undertake.
                 </p>
                 

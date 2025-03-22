@@ -28,7 +28,7 @@ const WhoWeAre = () => {
                     we are committed to excellence in every project we undertake.
                 </p>
                 
-                <div className="my-4">
+                <div className="my-5 flex justify-end w-full">
                     <button className="bg-primary text-white px-4 py-2  hover:outline-2 hover:text-primary hover:bg-quaternary hover:outline-solid">
                         Discover More
                     </button>

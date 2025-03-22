@@ -4,7 +4,7 @@ import heroImage from '../../public/hero-image.jpeg'
 import { bebas_neue } from '../fonts/fonts'
 const HeroSection = () => {
     return (
-    <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8 mt-16">
+    <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8 mt-16 border-b-2 border-secondary">
             <div className="flex flex-col justify-end   md:p-4 md:max-w-1/2 mt-5">
             <p className="text-secondary">Welcome to</p>
             <h1 className="flex flex-col text-xl md:text-4xl font-bold text-primary">Jafrana Construction Company</h1>
@@ -12,7 +12,7 @@ const HeroSection = () => {
                 <p className="text-secondary ">We are experts who specializes in helping 
                     individuals and businesses to build their dream homes and offices.
                 </p>
-                <div className="my-4">
+                <div className="my-5 flex justify-end w-full md:justify-start">
                     <button className="bg-primary text-white px-4 py-2 hover:outline-2 hover:text-primary hover:bg-quaternary hover:outline-solid">
                         Get In Touch
                     </button>

@@ -7,8 +7,14 @@ export const  Footer = () => {
          <div className="flex flex-col md:flex md:flex-row mx-auto md:justify-between p-4">
                 <div className="contact flex flex-col w-full items-center justify-center md:w-1/2">
                     <p className="title text-xl">About Us</p>
-                    <div className="grid grid-cols-2 gap-40  md:grid-cols-2">
-                        
+                    <div className="flex flex-col items-start justify-self-start w-full md:w-1/2">
+                      <p className="">
+                          Jafrana Construction Company is a construction
+                          company that specializes in building residential
+                          and commercial buildings. We have been in the construction
+                          industry for over 10 years and have built a reputation for
+                          quality workmanship and excellent customer service.
+                      </p>
                     </div>
                 </div>               
                 <div className="support flex flex-col w-full md:w-1/4 justify-end mx-5 ">

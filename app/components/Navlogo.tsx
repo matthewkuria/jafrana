@@ -4,8 +4,9 @@ import jafranaHomeLogo from "../../public/home-icon.png";
 export default function Navlogo() {
     return (
             <div className="">
-            <Link href="/">
-                <Image src={jafranaHomeLogo} alt="Thika Greens Golf logo" width={80} height={80} className="w-18 h-18" />
+            <Link href="/" className="flex flex-col items-center">
+                <Image src={jafranaHomeLogo} alt="Jafrana construction  logo" width={80} height={80} className="w-18 h-18" />
+                <p className="text-primary uppercase">Jafrana</p>
             </Link>
             </div>
     )

@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
     <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8">
             <div className="flex flex-col justify-end   p-4 md:max-w-1/2">
-            <p className="text-secondary">Welcome to</p>
+            <p className="text-secondary text-xs">Welcome to</p>
             <h1 className="flex flex-col text-xl md:text-4xl font-bold text-primary">Jafrana Construction Company</h1>
                 <p className={`${bebas_neue.className} text-2xl`}>We build your dream home</p>
                 <p className="text-secondary text-xs">We are experts who specializes in helping 
@@ -19,9 +19,11 @@ const HeroSection = () => {
                 </div> 
         </div>
             <div className="flex flex-col items-center justify-center p-2 relative ">
-                <div className="absolute bg-primary w-[90px] h-[90px] rounded-full -top-10 -left-10"></div>
+                {/* <div className="absolute bg-primary w-[50px] h-[50px] rounded-full -top-5 -left-5 z-30"></div> */}
+                 <div className="absolute bg-primary w-[300px] h-[50px]  -top-5 -left-5 z-0"></div>
                 <Image src={heroImage} alt="hero" width={500} height={500}
-                className='h-[350px] shadow-primary shadow-md rounded-md'/>
+                    className='h-[350px] shadow-primary shadow-md z-20 ' />
+                <div className="absolute bg-primary w-[300px] h-[30px]  -bottom-3 -right-3 z-0"></div>
             </div>
     </div>
   )

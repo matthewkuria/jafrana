@@ -4,5 +4,35 @@
     --color-primary: #ff6600;
     --color-secondary: #333333;
     --color-tertiary: #000000;
+    --color-quaternary: #ffffff;
     
 }
+.title{
+  font-family: 'proxima_nova_ltthin';
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 20px 0;
+  flex-wrap: nowrap;
+}
+.title:before {
+    content: " ";
+    width: 20%;
+    background-color:  #ff6600;
+    height: 1px;
+    display: block;
+    flex-shrink: 1;
+    margin: 0 20px; }
+  .title:after {
+    content: " ";
+    width: 20%;
+    background-color: #ff6600;
+    height: 1px;
+    display: block;
+    flex-shrink: 1;
+    margin: 0 20px;
+   }

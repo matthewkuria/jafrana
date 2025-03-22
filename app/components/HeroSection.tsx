@@ -19,9 +19,9 @@ const HeroSection = () => {
                 </div> 
         </div>
             <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
-                 <div className="absolute bg-primary w-[280px] h-[42px]  -top-2 -left-5 z-0"></div>
+                 <div className="absolute bg-primary w-[280px] h-[42px]  -top-2 -left-3 z-0"></div>
                 <Image src={heroImage} alt="hero" width={500} height={500}
-                    className='h-[350px] shadow-primary shadow-md z-20 ' />
+                    className='h-[350px] shadow-primary shadow-md z-20'/>
                 <div className="absolute bg-primary w-[280px] h-[30px]  -bottom-3 -right-3 z-0"></div>
             </div>
     </div>

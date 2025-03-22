@@ -7,7 +7,7 @@ export default function Navlinks() {
             <li className="hover:text-primary py-6"><Link href="/services">Services</Link></li>
             <li className="hover:text-primary py-6"><Link href="/gallery">Gallery</Link></li>
             <li className="hover:text-primary py-6"><Link href="/blog">Blog</Link></li>
-            <li className="hover:text-primary py-6"><Link href="/contacts">Contact Us</Link></li>
+            <li className="hover:text-primary py-6"><Link href="/contact-us">Contact Us</Link></li>
         </ul>
     )
 }

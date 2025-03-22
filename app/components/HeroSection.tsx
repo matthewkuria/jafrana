@@ -5,7 +5,7 @@ import { bebas_neue } from '../fonts/fonts'
 const HeroSection = () => {
     return (
     <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8 mt-16">
-            <div className="flex flex-col justify-end   p-4 md:max-w-1/2">
+            <div className="flex flex-col justify-end   p-4 md:max-w-1/2 mt-5">
             <p className="text-secondary text-xs">Welcome to</p>
             <h1 className="flex flex-col text-xl md:text-4xl font-bold text-primary">Jafrana Construction Company</h1>
                 <p className={`${bebas_neue.className} text-2xl`}>We build your dream home</p>

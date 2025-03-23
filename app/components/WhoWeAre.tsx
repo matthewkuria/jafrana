@@ -10,8 +10,8 @@ const WhoWeAre = () => {
                 <Image src={heroImage} alt="hero" width={500} height={500}
                     className='h-[300px] md:h-[350px] shadow-primary shadow-md z-20'/>
                 <div className="absolute bg-primary w-[280px] h-[30px]  -bottom-3 -right-3 z-0"></div>
-                <div className="absolute bg-tertiary w-[200px] h-[150px]  -bottom-3 -right-3 z-20 flex flex-col items-center justify-center">
-                    <p className="text-primary text-3xl font-bold">10 <span className="text-quaternary text-base">+ years</span></p>
+                <div className="absolute bg-tertiary w-[120px] h-[100px]  -bottom-3 -right-3 z-20 flex flex-col items-center justify-center">
+                    <p className="text-primary text-xl md:text-3xl font-bold">10 <span className="text-quaternary text-base">+ years</span></p>
                     <p className="text-quaternary">Experience</p>
                 </div>
             </div>

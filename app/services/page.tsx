@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { bebas_neue } from '../fonts/fonts'
 import construction from '../../public/home (1).jpeg'
 import renovation from "../../public/home (6).jpeg"
+import interior_design from "../../public/home (2).jpeg"
 
 const page = () => {
   return (
@@ -24,7 +25,7 @@ const page = () => {
           <p className="">We offer a wide range of renovation services to meet your needs.</p>
         </div>
         <div className="service-card">
-          <Image src={construction} alt="construction" width={200} height={200}
+          <Image src={interior_design} alt="construction" width={200} height={200}
             className='rounded-md h-[200px] w-[300px] service-card-image'
           />
           <p className="services-title">Interior Design</p>

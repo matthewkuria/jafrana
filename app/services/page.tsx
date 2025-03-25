@@ -12,19 +12,22 @@ const page = () => {
           <Image src={construction} alt="construction" width={200} height={200}
             className='rounded-md'
           />
-            <p className="title">Construction</p>
+          <p className="title">Construction</p>
+          <p className="">We offer a wide range of construction services to meet your needs.</p>
         </div>
         <div className="service-card">
           <Image src={construction} alt="construction" width={200} height={200}
             className='rounded-md'
           />
-            <p className="title">Renovation</p>
+          <p className="title">Renovation</p>
+          <p className="">We offer a wide range of renovation services to meet your needs.</p>
         </div>
         <div className="service-card">
           <Image src={construction} alt="construction" width={200} height={200}
             className='rounded-md'
           />
-            <p className="title">Interior Design</p>
+          <p className="title">Interior Design</p>
+          <p className="">We offer a wide range of interior design services to meet your needs.</p>
         </div>
       </article>
     </section>

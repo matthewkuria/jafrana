@@ -36,9 +36,9 @@
     flex-shrink: 1;
     margin: 0 20px;
    }
-   .services{
-    height: 100vh;
-   }
+ .services{
+  min-height: 100vh;
+ }
    .service-card{
     box-shadow: var(--color-secondary) 0px 0px 2px;
     border-radius: 10px;

@@ -36,20 +36,23 @@
     flex-shrink: 1;
     margin: 0 20px;
    }
- .services{
-  min-height: 100vh;
- }
-   .service-card{
-    box-shadow: var(--color-secondary) 0px 0px 2px;
-    border-radius: 10px;
-    background-color: var(--color-quaternary);
-    color: var(--color-tertiary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-   }
+  .services{
+    min-height: 100vh;
+  }
+  .service-card{
+  box-shadow: var(--color-secondary) 0px 0px 2px;
+  border-radius: 10px;
+  background-color: var(--color-quaternary);
+  color: var(--color-tertiary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  }
+.service-card-image{
+  padding: 10px;
+}

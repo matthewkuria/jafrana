@@ -18,6 +18,13 @@
   align-content: center;
   margin: 20px 0;
   flex-wrap: nowrap;
+  font-weight: bold;
+}
+.services-title{
+  font-size: 16px;
+  color: var(--color-primary);
+  font-weight: bold;
+  margin: 10px 0;
 }
 .title:before {
     content: " ";
@@ -51,7 +58,7 @@
   align-content: center;
   text-align: center;
   width: 300px;
-  height: 300px;
+  height: 310px;
   }
 .service-card-image{
   padding: 10px;

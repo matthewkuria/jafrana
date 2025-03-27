@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import heroImage from '../../public/hero-image.jpeg'
 import { bebas_neue } from '../fonts/fonts'
+import Link from 'next/link'
 const HeroSection = () => {
     return (
     <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8 mt-16 border-b-2 border-secondary">
@@ -13,9 +14,9 @@ const HeroSection = () => {
                     individuals and businesses to build their dream homes and offices.
                 </p>
                 <div className="my-5 flex justify-end w-full md:justify-start">
-                    <button className="bg-primary text-white px-4 py-2 hover:outline-2 hover:text-primary hover:bg-quaternary hover:outline-solid">
+                    <Link href="/contact-us" className="bg-primary text-white px-4 py-2 hover:outline-2 hover:text-primary hover:bg-quaternary hover:outline-solid">
                         Get In Touch
-                    </button>
+                    </Link>
                 </div> 
         </div>
             <div className="flex flex-col items-center justify-center p-2 relative m-1 ">

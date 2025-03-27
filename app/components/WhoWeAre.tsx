@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import heroImage from '../../public/home (8).jpeg'
 import { bebas_neue, redHatText } from '../fonts/fonts'
+import Link from 'next/link'
 const WhoWeAre = () => {
     return (
     <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8">
@@ -29,9 +30,9 @@ const WhoWeAre = () => {
                 </p>
                 
                 <div className="my-5 flex justify-end w-full">
-                    <button className="bg-primary text-white px-4 py-2  hover:outline-2 hover:text-primary hover:bg-quaternary hover:outline-solid">
+                    <Link href="/services" className="bg-primary text-white px-4 py-2  hover:outline-2 hover:text-primary hover:bg-quaternary hover:outline-solid">
                         Discover More
-                    </button>
+                    </Link>
                 </div> 
             </div>
     </div>

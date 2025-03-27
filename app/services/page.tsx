@@ -7,7 +7,7 @@ import interior_design from "../../public/home (2).jpeg"
 
 const page = () => {
   return (
-    <main className="services  flex  flex-col items-center justify-center w-full my-10 text-[13px] text-secondary">
+    <main className="services  flex  flex-col items-center justify-center w-full mt-20 text-[13px] text-secondary">
       <h1 className={`${bebas_neue.className} text-3xl text-primary underline decoration-primary my-4`}>Services</h1>
       <article className='bg-quaternary flex flex-col md:flex md:flex-row items-center justify-around w-full gap-3'>
         <div className="service-card">
@@ -32,6 +32,13 @@ const page = () => {
           <p className="">We offer a wide range of interior design services to meet your needs.</p>
         </div>
       </article>
+      <aside className="p-5 bg-quaternary flex flex-col items-center justify-center w-full mt-10 gap-3">
+        <h1 className={`${bebas_neue.className} text-3xl text-primary underline decoration-primary my-4`}>Why Choose Us?</h1>
+        <p className="">We are a team of experienced professionals who are dedicated to providing the best services to our clients. We use the latest technology and techniques to ensure that our work is of the highest quality.</p>
+        <p className="">We are committed to providing our clients with the best possible experience. We work closely with our clients to understand their needs and provide them with the best solutions.</p>
+        <p className="">We offer competitive pricing and flexible payment options to make our services accessible to everyone.</p>
+        <p className="">We are fully licensed and insured, so you can have peace of mind knowing that your project is in good hands.</p>
+      </aside>
     </main>
   )
 }

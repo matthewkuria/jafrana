@@ -7,7 +7,7 @@ import image2 from "../../public/home (2).jpeg"
 import image3 from "../../public/home (3).jpeg"
 import image4 from "../../public/home (4).jpeg"
 
-const page = () => {
+const Page = () => {
   const [featuredImage, setFeaturedImage] = useState(mainImage)
 
   return (
@@ -50,4 +50,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

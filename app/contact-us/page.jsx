@@ -1,6 +1,6 @@
 export default function Contacts() {
   return (
-    <section className="  flex flex-col justify-center p-6 mt-20">
+    <section className="  flex flex-col justify-center p-6 mt-20 text-[12px] md:text-[13px] lg:text-[15px]">
       <div className="bg-slate-900 p-6 text-white rounded-lg">
         <h1 className="text-2xl py-2 font-bold">Reach out to us</h1>
         <p className="py-1">Have any  inquiries?</p>
@@ -12,7 +12,7 @@ export default function Contacts() {
         </div>
         <div className="flex flex-col p-5">
           <div className="text-slate-500">
-            <p className="text-2xl underline underline-offset-1">Jafrana Construction Company</p>
+            <p className="text-xl md:text-2xl underline my-1">Jafrana Construction Company</p>
             <p className="">
                 It is a construction
                 company that specializes in building residential
@@ -22,13 +22,13 @@ export default function Contacts() {
               </p>
           </div>
           <div className="mt-4 text-slate-500">
-            <p className="text-2xl underline">Contacts</p>
-            <p className="text-center">Jafrana Construction Company</p>
-            <p className="text-center">P.O. Box 12780</p>
-            <p className="text-center">Nakuru, Kenya</p>
-            <p className="text-center">Tel: 0722553222</p>
-            <p className="text-center">Email:maishwanyeki4@gmail.com</p>
-            <p className="text-center">Location:Nakuru-Dundori Road, next to Rohi building.</p>
+            <p className="text-xl md:text-2xl underline my-1">Contacts</p>
+            <p className="text-left md:text-center">Jafrana Construction Company</p>
+            <p className="text-left md:text-center">P.O. Box 12780</p>
+            <p className="text-left md:text-center">Nakuru, Kenya</p>
+            <p className="text-left md:text-center">Tel: 0722553222</p>
+            <p className="text-left md:text-center">Email:maishwanyeki4@gmail.com</p>
+            <p className="text-left md:text-center">Location:Nakuru-Dundori Road, next to Rohi building.</p>
           </div>
         </div>
       </div>

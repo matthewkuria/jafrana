@@ -11,7 +11,7 @@ const Page = () => {
   const [featuredImage, setFeaturedImage] = useState(mainImage)
 
   return (
-    <div className="min-h-screen p-4">
+    <div className="min-h-screen p-4 mt-20">
       {/* Featured Image Section */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-primary mb-4">Featured Image</h1>

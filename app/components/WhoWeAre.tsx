@@ -42,9 +42,21 @@ const WhoWeAre = () => {
             <article className="flex flex-col md:flex-row items-start justify-center md:justify-between bg-white text-tertiary p-5">
                 <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
                     <p className={`${bebas_neue.className} text-2xl text-secondary`}>Why Choose Us</p>
-                    <p className="">Client Satsifaction</p>
-                    <p className="">Quality Workmanship</p>
-                    <p className="">Timely Delivery</p> 
+                    <p className="text-primary font-semibold">Client Satsifaction</p>
+                    <p className="text-tertiary text-base">
+                    At Jafrana Construction Company,
+                    Our clients are at the heart of everything we do.
+                    We strive to exceed expectations by understanding
+                    their unique needs and delivering tailored solutions.
+                    Your satisfaction is our priority, and we are dedicated
+                    to building lasting relationships based on trust and excellence.
+                    </p>
+                    <p className="text-primary font-semibold">Quality Workmanship</p>
+                    <p className="text-tertiary text-base">
+                        We take pride in our attention to detail and commitment to delivering superior quality in every project. 
+                        Our skilled craftsmen and use of premium materials ensure that your construction project stands the test of time.
+                    </p>
+                    
                 </div>
                 <div className="flex flex-col items-center justify-center p-2 relative m-1 md:max-w-1/2">
                     <Image src={whyUsImage} alt="hero" width={900} height={500}

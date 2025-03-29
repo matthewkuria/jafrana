@@ -5,17 +5,18 @@ import { bebas_neue, redHatText } from '../fonts/fonts'
 import Link from 'next/link'
 const WhoWeAre = () => {
     return (
-    <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8">
-            <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
-                <div className="absolute bg-primary w-[280px] h-[42px]  -top-2 -left-3 z-0"></div>
-                <Image src={heroImage} alt="hero" width={500} height={500}
-                    className='h-[300px] md:h-[350px] shadow-primary shadow-md z-20'/>
-                <div className="absolute bg-primary w-[280px] h-[30px]  -bottom-3 -right-3 z-0"></div>
-                <div className="absolute bg-tertiary w-[120px] h-[100px]  -bottom-3 -right-3 z-20 flex flex-col items-center justify-center">
-                    <p className="text-primary text-xl md:text-3xl font-bold">10 <span className="text-quaternary text-base">+ years</span></p>
-                    <p className="text-quaternary">Experience</p>
+        <section className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 md:p-8">
+            <div className="">
+                <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
+                    <div className="absolute bg-primary w-[280px] h-[42px]  -top-2 -left-3 z-0"></div>
+                    <Image src={heroImage} alt="hero" width={500} height={500}
+                        className='h-[300px] md:h-[350px] shadow-primary shadow-md z-20'/>
+                    <div className="absolute bg-primary w-[280px] h-[30px]  -bottom-3 -right-3 z-0"></div>
+                    <div className="absolute bg-tertiary w-[120px] h-[100px]  -bottom-3 -right-3 z-20 flex flex-col items-center justify-center">
+                        <p className="text-primary text-xl md:text-3xl font-bold">10 <span className="text-quaternary text-base">+ years</span></p>
+                        <p className="text-quaternary">Experience</p>
+                    </div>
                 </div>
-            </div>
             <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
                 <p className={`${bebas_neue.className} text-2xl text-primary`}>Who We Are</p>
                 <p className={`${redHatText.className} font-bold`}>We Are The Best Construction Company</p>
@@ -35,7 +36,26 @@ const WhoWeAre = () => {
                     </Link>
                 </div> 
             </div>
-    </div>
+            </div>
+            <article className=''>
+                <div className="">
+                    <p className="">Why Choose Us</p>
+                    <p className={`${redHatText.className} font-bold`}>We Are The Best Construction Company</p>
+                </div>
+                <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
+                    <div className="absolute bg-primary w-[280px] h-[42px]  -top-2 -left-3 z-0"></div>
+                    <Image src={heroImage} alt="hero" width={500} height={500}
+                        className='h-[300px] md:h-[350px] shadow-primary shadow-md z-20'/>
+                    <div className="absolute bg-primary w-[280px] h-[30px]  -bottom-3 -right-3 z-0"></div>
+                    <div className="absolute bg-tertiary w-[120px] h-[100px]  -bottom-3 -right-3 z-20 flex flex-col items-center justify-center">
+                        <p className="text-primary text-xl md:text-3xl font-bold">10 <span className="text-quaternary text-base">+ years</span></p>
+                        <p className="text-quaternary">Experience</p>
+                    </div>
+                </div>
+                
+            </article>
+    </section>
+    
   )
 }
 

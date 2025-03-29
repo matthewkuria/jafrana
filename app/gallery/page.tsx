@@ -14,7 +14,7 @@ const Page = () => {
     <div className="min-h-screen p-4 mt-20">
       {/* Featured Image Section */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-primary mb-4">Featured Image</h1>
+        <h1 className="text-3xl font-bold text-secondary mb-4">Featured Image</h1>
         <div className="relative">
           <Image
             width={800}
@@ -31,7 +31,7 @@ const Page = () => {
 
       {/* Image Gallery Section */}
       <div>
-        <h2 className="text-2xl font-bold text-primary mb-4">Gallery</h2>
+        <h2 className="text-2xl font-bold text-secondary mb-4">Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[image1, image2, image3, image4].map((image, index) => (
             <div key={index} onClick={() => setFeaturedImage(image)} className="cursor-pointer">

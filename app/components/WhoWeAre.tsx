@@ -12,15 +12,15 @@ const WhoWeAre = () => {
                 <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
                     <div className="absolute bg-secondary w-[280px] h-[36px]  -top-2 -left-3 z-0"></div>
                     <Image src={heroImage} alt="hero" width={550} height={200}
-                        className='h-[200px] md:h-[300px] shadow-secondary shadow-xs z-20'/>
-                    <div className="absolute bg-secondary w-[280px] h-[20px]  -bottom-3 -right-3 z-0"></div>
-                    <div className="absolute bg-primary w-[120px] h-[80px]  -bottom-3 -right-3 z-20 flex flex-col items-center justify-center">
+                        className='h-[200px] md:h-[320px] shadow-secondary shadow-xs z-20'/>
+                    <div className="absolute bg-secondary w-[280px] h-[20px]  -bottom-3 -right-1 z-0"></div>
+                    <div className="absolute bg-primary w-[120px] h-[80px]  -bottom-3 -right-1 z-20 flex flex-col items-center justify-center">
                         <p className="text-secondary text-xl md:text-3xl font-bold">10 <span className="text-quaternary text-base">+ years</span></p>
                         <p className="text-quaternary">Experience</p>
                     </div>
                 </div>
             <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
-                <p className={`${bebas_neue.className} text-2xl text-secondary`}>Who We Are</p>
+                <p className={`${bebas_neue.className} text-2xl text-secondary`}>Who Are We?</p>
                 <p className="text-black font-semibold">We Are The Best Construction Company</p>
                 <p className="text-tertiary">
                     At Jafrana Construction Company,
@@ -41,7 +41,7 @@ const WhoWeAre = () => {
             </div>
             <article className="flex flex-col md:flex-row items-start justify-center md:justify-between bg-white text-tertiary p-5">
                 <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
-                    <p className={`${bebas_neue.className} text-2xl text-secondary`}>Why Choose Us</p>
+                    <p className={`${bebas_neue.className} text-2xl text-secondary`}>Why Choose Us?</p>
                     <p className="text-primary font-semibold">Client Satsifaction</p>
                     <p className="text-tertiary text-base">
                     At Jafrana Construction Company,
@@ -51,7 +51,7 @@ const WhoWeAre = () => {
                     Your satisfaction is our priority, and we are dedicated
                     to building lasting relationships based on trust and excellence.
                     </p>
-                    <p className="text-primary font-semibold">Quality Workmanship</p>
+                    <p className="text-primary font-semibold my-1">Quality Workmanship</p>
                     <p className="text-tertiary text-base">
                         We take pride in our attention to detail and commitment to delivering superior quality in every project. 
                         Our skilled craftsmen and use of premium materials ensure that your construction project stands the test of time.

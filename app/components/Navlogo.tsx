@@ -6,7 +6,7 @@ export default function Navlogo() {
             <div className="">
                 <Link href="/" className="flex flex-col items-center">
                     <Image src={jafranaHomeLogo} alt="Jafrana construction  logo" width={50} height={50} className="w-12 h-12" />
-                    <p className="text-primary uppercase">Jafrana</p>
+                    <p className="text-secondary uppercase">Jafrana</p>
                 </Link>
             </div>
     )

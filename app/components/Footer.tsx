@@ -18,14 +18,14 @@ export const  Footer = () => {
                     </div>
                 </div>               
                 <div className="support flex flex-col w-full md:w-1/4 justify-end mx-5 ">
-                    <p className="footer-title my-5 border-primary border-b-1">Contact Us</p>
+                    <p className="footer-title my-5 border-secondary border-b-1">Contact Us</p>
                     <p className="text-center">Jafrana Construction Company</p>
                     <p className="text-center">P.O. Box 12780</p>
                     <p className="text-center">Nakuru, Kenya</p>
                     <p className="text-center">Tel: 0722553222</p>
                     <p className="text-center">Email:maishwanyeki4@gmail.com</p>
                     <p className="text-center">Location:Nakuru-Dundori Road, next to Rohi building.</p>
-                  <p className="footer-title my-5 border-primary  border-b-1">Follow us(Social Media)</p>  
+                  <p className="footer-title my-5 border-secondary  border-b-1">Follow us(Social Media)</p>  
                     <SocialsLinks/>
                 </div>                
             </div>

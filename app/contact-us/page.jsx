@@ -7,7 +7,7 @@ export default function Contacts() {
       </div>
       <div className="flex flex-col  md:flex md:flex-row md:justify-between py-5 mt-4 ">
         <div className="p-1">
-          <p className="text-primary text-3xl font-bold my-2">Get in Touch</p>
+          <p className="text-secondary text-3xl font-bold my-2">Get in Touch</p>
           <iframe className="w-full  md:w-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.80072254987925!2d36.13723466610843!3d-0.27119800477468703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298d90cf610bef%3A0xf2f21833bc7cc21a!2sNakuru!5e0!3m2!1sen!2ske!4v1743100342325!5m2!1sen!2ske" width="500" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className="flex flex-col p-5">

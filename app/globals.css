@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme{
-    --color-primary: #ff6600;
-    --color-secondary: #666666;
-    --color-tertiary: #000000;
+    --color-primary:#000000;
+    --color-secondary: #ff6600;
+    --color-tertiary:#666666;
     --color-quaternary: #ffffff;
     
 }
@@ -22,7 +22,7 @@
 }
 .services-title{
   font-size: 16px;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-weight: bold;
   margin: 10px 0;
 }

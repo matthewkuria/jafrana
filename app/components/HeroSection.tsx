@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className="flex flex-col justify-end   md:p-4 md:max-w-1/2 mt-5">
             <p className="text-tertiary">Welcome to</p>
             <h1 className="flex flex-col text-xl md:text-4xl font-bold text-secondary">Jafrana Construction Company</h1>
-                <p className={`${bebas_neue.className} text-2xl my-1`}>We build your dream home</p>
+                <p className={`${bebas_neue.className} text-2xl my-1`}>We build your dream homes</p>
                 <p className="text-tertiary ">We are experts who specializes in helping 
                     individuals and businesses to build their dream homes and offices.
                 </p>

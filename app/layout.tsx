@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import { Footer } from "./components/Footer";
-import { playfairDisplay } from "./fonts/fonts";
+import { inter, modak, playfairDisplay } from "./fonts/fonts";
 
 
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.className} antialiased`}
+        className={`${playfairDisplay.className} ${inter.className} antialiased`}
       >
         <Header />
         {children}

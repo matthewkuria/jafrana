@@ -1,6 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
+import whatsappIcon from "../../public/whatsappIcon.png";
 export default function Contacts() {
   return (
-    <section className="  flex flex-col justify-center p-6 mt-20 text-[12px] md:text-[13px] lg:text-[15px]">
+    <section className="relative  flex flex-col justify-center p-6 mt-20 text-[12px] md:text-[13px] lg:text-[15px]">
       <div className="bg-slate-900 p-6 text-white rounded-lg">
         <h1 className="text-2xl py-2 font-bold">Reach out to us</h1>
         <p className="py-1">Have any  inquiries?</p>
@@ -31,6 +34,12 @@ export default function Contacts() {
             <p className="text-left md:text-center">Location:Nakuru-Dundori Road, next to Rohi building.</p>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-30 right-10 p-5">
+        <Link href="https://api.whatsapp.com/send?phone=254722553222&text=Hello%20Jafrana%20Construction%20Company%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
+          <Image src={whatsappIcon} height={60} width={60}
+          className="animate-pulse" />
+        </Link>
       </div>
     </section>
   );

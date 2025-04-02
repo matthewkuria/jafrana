@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import { Footer } from "./components/Footer";
-import { inter, modak, playfairDisplay } from "./fonts/fonts";
+import { inter, playfairDisplay } from "./fonts/fonts";
 
 
 

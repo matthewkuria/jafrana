@@ -15,7 +15,7 @@ export default function Contacts() {
         </div>
         <div className="flex flex-col p-5">
           <div className="text-slate-500">
-            <p className="text-xl md:text-2xl underline my-1">Jafrana Construction Company</p>
+            <p className="text-xl md:text-2xl  my-1">Jafrana Construction Company</p>
             <p className="">
                 It is a construction
                 company that specializes in building residential
@@ -25,7 +25,7 @@ export default function Contacts() {
               </p>
           </div>
           <div className="mt-4 text-slate-500">
-            <p className="text-xl md:text-2xl underline my-1">Contacts</p>
+            <p className="text-xl md:text-2xl my-1">Contacts</p>
             <p className="text-left md:text-center">Jafrana Construction Company</p>
             <p className="text-left md:text-center">P.O. Box 12780</p>
             <p className="text-left md:text-center">Nakuru, Kenya</p>

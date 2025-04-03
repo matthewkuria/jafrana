@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"></link>
+      </head>
       <body
         className={`${playfairDisplay.className} ${inter.className} antialiased`}
       >

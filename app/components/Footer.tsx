@@ -1,20 +1,25 @@
 import React from 'react'
 import SocialsLinks from './SocialsLinks'
-
+import Link from 'next/link'
+import Image from 'next/image'
+import jafranaHomeLogo from "../../public/home-icon.png";
 export const  Footer = () => {
   return (
     <section className={`bg-slate-900 text-xs text-white p-1`}>
-         <div className="flex flex-col md:flex md:flex-row mx-auto md:justify-between p-4">
+         <div className="flex flex-col md:flex md:flex-row mx-auto md:justify-between p-4 items-baseline">
                 <div className="contact flex flex-col w-full items-center justify-center md:w-1/2">
-                    <p className="title text-xl">About Us</p>
-                    <div className="flex flex-col items-start justify-self-start w-full md:w-1/2">
-                      <p className="">
-                          Jafrana Construction Company is a construction
-                          company that specializes in building residential
-                          and commercial buildings. We have been in the construction
-                          industry for over 10 years and have built a reputation for
-                          quality workmanship and excellent customer service.
-                      </p>
+                    <div className="flex flex-col  w-full md:w-1/2 md:flex-row md:justify-between"> 
+                        <div className="flex flex-col gap-4">
+                          <p className="footer-title my-5 border-secondary border-b-1">Quick Links</p>
+                          <Link href="/services" className='hover:underline'>Services</Link>
+                          <Link href="/gallery" className='hover:underline'>Gallery</Link>
+                          <Link href="/projects" className='hover:underline'>Projects</Link>
+                
+                      </div>
+                      <div className="flex flex-col items-center justify-end"> 
+                          <Image src={jafranaHomeLogo} alt="Jafrana construction  logo" width={100} height={100} className="w-[100px] h-[100px]" />
+                          <p className="text-secondary text-2xl font-semibold uppercase">Jafrana</p>
+                      </div>
                     </div>
                 </div>               
                 <div className="support flex flex-col w-full md:w-1/4 justify-end mx-5 ">

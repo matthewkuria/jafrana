@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 import WhoWeAre from "./components/WhoWeAre";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       </article>
       <aside className="">
         <Services />
+      </aside>
+      <aside className="">
+        <Testimonials />
       </aside>
     </main>
   );

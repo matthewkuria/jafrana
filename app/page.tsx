@@ -12,10 +12,10 @@ export default function Home() {
       <article className="">
         <WhoWeAre />
       </article>
-      <aside className="">
+      <aside className="w-full mt-10">
         <Services />
       </aside>
-      <aside className="">
+      <aside className="w-full">
         <Testimonials />
       </aside>
     </main>

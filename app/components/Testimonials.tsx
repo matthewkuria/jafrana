@@ -28,14 +28,17 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white p-4 rounded shadow-md text-center"
+              className=" bg-white p-4 rounded shadow-md text-center "
             >
-              <img
+              <div className="img-container">
+                <img
               src={`/images/testimonials/${testimonial.id}.webp`}
               alt={`${testimonial.name}'s photo`}
               className="w-16 h-16 rounded-full mx-auto mb-4"
+              id='person-img'
               />
-              <p className="text-lg font-semibold">{testimonial.name}</p>
+              </div>
+              <p className="text-lg font-semibold text-secondary">{testimonial.name}</p>
               <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
             </div>
           ))}

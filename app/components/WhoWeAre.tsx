@@ -8,7 +8,7 @@ const WhoWeAre = () => {
     return (
         <section className="flex flex-col items-center justify-center bg-white text-secondary p-5 md:p-10">
             <h3 className="text-primary text-2xl font-bold title">About Us</h3>
-            <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  text-[13px] md:text-[16px] p-3 ">
+            <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  p-3 ">
                 <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
                     <div className="absolute bg-secondary w-[280px] h-[36px]  -top-2 -left-3 z-0"></div>
                     <Image src={heroImage} alt="hero" width={550} height={200}
@@ -43,7 +43,7 @@ const WhoWeAre = () => {
                 <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
                     <p className={`${bebas_neue.className} text-2xl text-secondary`}>Why Choose Us?</p>
                     <p className="text-primary font-semibold">Client Satsifaction</p>
-                    <p className="text-tertiary text-base">
+                    <p className="text-tertiary">
                     At Jafrana Construction Company,
                     Our clients are at the heart of everything we do.
                     We strive to exceed expectations by understanding

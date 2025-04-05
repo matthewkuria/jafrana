@@ -1,5 +1,6 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import FontAwesome icons
 
 const testimonials = [
   {
@@ -33,49 +34,60 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <div className="bg-slate-100 p-4 flex flex-col items-center justify-center mt-10">
       <p className="title text-2xl">Client Testimonials</p>
       <div className="relative w-full max-w-3xl mt-6">
         
         <div className="mt-8 space-y-6 relative">
-          <div className="testimonials-container overflow-x-scroll flex  space-y-6">
-            {testimonials.map((testimonial) => (
-              <div
-          key={testimonial.id}
-          className="bg-white p-4 rounded shadow-md text-center flex-shrink-0 w-80"
-              >
-            <div className="img-container">
-            <img
-              src={testimonial.img}
-              alt={`${testimonial.name}'s photo`}
-              className="w-16 h-16 rounded-full mx-auto mb-4"
-              id="person-img"
-            />
-            </div>
-            <p className="text-lg font-semibold text-secondary uppercase">{testimonial.name}</p>
-            <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
-        <div className="flex justify-center mt-4">
-          <button
-            className="bg-gray-300 p-2 rounded-full shadow-md mx-2 text-secondary hover:bg-gray-400 transition-colors duration-200"
-            onClick={() => {
-                
-            }}
-          >
-            &#8592;
-          </button>
-          <button
-            className="bg-gray-300 p-2 rounded-full shadow-md mx-2 text-secondary hover:bg-gray-400 transition-colors duration-200"
-            onClick={() => {
-              
-            }}
-          >
-            &#8594;
-          </button>
-        </div>
+          <div className="testimonials-container flex justify-center">
+            <div
+              key={testimonials[currentIndex].id}
+              className="bg-white p-4 rounded shadow-md text-center flex-shrink-0 w-80"
+            >
+              <div className="img-container">
+                <img
+                  src={testimonials[currentIndex].img}
+                  alt={`${testimonials[currentIndex].name}'s photo`}
+                  className="w-16 h-16 rounded-full mx-auto mb-4"
+                  id="person-img"
+                />
               </div>
-            ))}
+              <p className="text-lg font-semibold text-secondary uppercase">
+                {testimonials[currentIndex].name}
+              </p>
+              <p className="text-gray-600 mt-2">{testimonials[currentIndex].feedback}</p>
+            </div>
           </div>
+        </div>
+        {/* prevs and next button */}
+        <div className="flex justify-around mt-4">
+          <button
+            className="bg-gray-300 p-2 rounded-full shadow-md mx-2 text-secondary hover:bg-gray-400 transition-colors duration-200"
+            onClick={handlePrev}
+          >
+            <FaArrowLeft /> {/* FontAwesome left arrow */}
+          </button>
+          <button
+            className="bg-gray-300 p-2 rounded-full shadow-md mx-2 text-secondary hover:bg-gray-400 transition-colors duration-200"
+            onClick={handleNext}
+          >
+            <FaArrowRight /> {/* FontAwesome right arrow */}
+          </button>
         </div>
       </div>
     </div>

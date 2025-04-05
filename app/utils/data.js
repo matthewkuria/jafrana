@@ -1,5 +1,4 @@
-// local reviews data
-const reviews = [
+ const testimonials = [
   {
     id: 1,
     name: 'susan smith',

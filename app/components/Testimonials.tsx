@@ -4,18 +4,31 @@ import React from 'react';
 const testimonials = [
   {
     id: 1,
-    name: 'John Doe',
-    feedback: 'This service was amazing! Highly recommend to everyone.',
+    name: 'susan smith',
+    job: 'web developer',
+    img: 'https://www.course-api.com/images/people/person-1.jpeg',
+    feedback: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
   {
     id: 2,
-    name: 'Jane Smith',
-    feedback: 'A fantastic experience from start to finish.',
+    name: 'anna johnson',
+    job: 'web designer',
+    img: 'https://www.course-api.com/images/people/person-2.jpeg',
+    feedback: 'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
   },
   {
     id: 3,
-    name: 'Michael Brown',
-    feedback: 'Professional and efficient. Could not ask for more!',
+    name: 'peter jones',
+    job: 'intern',
+    img: 'https://www.course-api.com/images/people/person-4.jpeg',
+    feedback: 'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+  },
+  {
+    id: 4,
+    name: 'bill anderson',
+    job: 'the boss',
+    img: 'https://www.course-api.com/images/people/person-3.jpeg',
+    feedback: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
   },
 ];
 
@@ -26,47 +39,43 @@ const Testimonials = () => {
       <div className="relative w-full max-w-3xl mt-6">
         
         <div className="mt-8 space-y-6 relative">
-          <button
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md"
-            onClick={() => {
-              const container = document.querySelector('.testimonials-container');
-              if (container) {
-          container.scrollBy({ left: -300, behavior: 'smooth' });
-              }
-            }}
-          >
-            &#8592;
-          </button>
-          <div className="testimonials-container overflow-x-auto flex space-x-6">
+          <div className="testimonials-container overflow-x-scroll flex  space-y-6">
             {testimonials.map((testimonial) => (
               <div
           key={testimonial.id}
           className="bg-white p-4 rounded shadow-md text-center flex-shrink-0 w-80"
               >
-          <div className="img-container">
+            <div className="img-container">
             <img
-              src={`/images/testimonials/${testimonial.id}.webp`}
+              src={testimonial.img}
               alt={`${testimonial.name}'s photo`}
               className="w-16 h-16 rounded-full mx-auto mb-4"
               id="person-img"
             />
-          </div>
-          <p className="text-lg font-semibold text-secondary">{testimonial.name}</p>
-          <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
-              </div>
-            ))}
-          </div>
+            </div>
+            <p className="text-lg font-semibold text-secondary">{testimonial.name}</p>
+            <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
+        <div className="flex justify-center mt-4">
           <button
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md"
+            className="bg-gray-300 p-2 rounded-full shadow-md mx-2 text-secondary hover:bg-gray-400 transition-colors duration-200"
             onClick={() => {
-              const container = document.querySelector('.testimonials-container');
-              if (container) {
-          container.scrollBy({ left: 300, behavior: 'smooth' });
-              }
+                
+            }}
+          >
+            &#8592;
+          </button>
+          <button
+            className="bg-gray-300 p-2 rounded-full shadow-md mx-2 text-secondary hover:bg-gray-400 transition-colors duration-200"
+            onClick={() => {
+              
             }}
           >
             &#8594;
           </button>
+        </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

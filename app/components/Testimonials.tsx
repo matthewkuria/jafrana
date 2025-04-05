@@ -53,7 +53,7 @@ const Testimonials = () => {
               id="person-img"
             />
             </div>
-            <p className="text-lg font-semibold text-secondary">{testimonial.name}</p>
+            <p className="text-lg font-semibold text-secondary uppercase">{testimonial.name}</p>
             <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
         <div className="flex justify-center mt-4">
           <button

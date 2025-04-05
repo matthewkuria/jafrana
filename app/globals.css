@@ -55,7 +55,7 @@
     min-height: 100vh;
   }
   .service-card{
-  box-shadow: var(--color-secondary) 0px 0px 2px;
+  box-shadow: var(--color-secondary) 1px 0px 1px;
   border-radius: 10px;
   background-color: var(--color-quaternary);
   color: var(--color-tertiary);

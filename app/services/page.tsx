@@ -32,7 +32,7 @@ const page = () => {
           <p className="">We offer a wide range of interior design services to meet your needs.</p>
         </div>
       </article>
-      <aside className="p-5 bg-quaternary flex flex-col items-center justify-center w-full mt-10 gap-3">
+      <aside className="p-5 bg-slate-50 flex flex-col items-center justify-center w-full mt-10 gap-3 mx-10">
         <h1 className={`${bebas_neue.className} text-3xl text-secondary underline decoration-secondary my-4`}>Why Choose Us?</h1>
         <p className="">We are a team of experienced professionals who are dedicated to providing the best services to our clients. We use the latest technology and techniques to ensure that our work is of the highest quality.</p>
         <p className="">We are committed to providing our clients with the best possible experience. We work closely with our clients to understand their needs and provide them with the best solutions.</p>

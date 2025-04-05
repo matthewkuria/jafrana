@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 const testimonials = [
@@ -24,24 +25,48 @@ const Testimonials = () => {
       <p className="title text-2xl">Client Testimonials</p>
       <div className="relative w-full max-w-3xl mt-6">
         
-        <div className="mt-8 space-y-6">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className=" bg-white p-4 rounded shadow-md text-center "
-            >
-              <div className="img-container">
-                <img
+        <div className="mt-8 space-y-6 relative">
+          <button
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md"
+            onClick={() => {
+              const container = document.querySelector('.testimonials-container');
+              if (container) {
+          container.scrollBy({ left: -300, behavior: 'smooth' });
+              }
+            }}
+          >
+            &#8592;
+          </button>
+          <div className="testimonials-container overflow-x-auto flex space-x-6">
+            {testimonials.map((testimonial) => (
+              <div
+          key={testimonial.id}
+          className="bg-white p-4 rounded shadow-md text-center flex-shrink-0 w-80"
+              >
+          <div className="img-container">
+            <img
               src={`/images/testimonials/${testimonial.id}.webp`}
               alt={`${testimonial.name}'s photo`}
               className="w-16 h-16 rounded-full mx-auto mb-4"
-              id='person-img'
-              />
+              id="person-img"
+            />
+          </div>
+          <p className="text-lg font-semibold text-secondary">{testimonial.name}</p>
+          <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
               </div>
-              <p className="text-lg font-semibold text-secondary">{testimonial.name}</p>
-              <p className="text-gray-600 mt-2">{testimonial.feedback}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+          <button
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md"
+            onClick={() => {
+              const container = document.querySelector('.testimonials-container');
+              if (container) {
+          container.scrollBy({ left: 300, behavior: 'smooth' });
+              }
+            }}
+          >
+            &#8594;
+          </button>
         </div>
       </div>
     </div>

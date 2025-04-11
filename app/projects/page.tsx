@@ -23,7 +23,7 @@ const page = () => {
       </article>
 
       <section className="w-full flex flex-col items-center justify-center">
-        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-2 p-2">
+        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-2 p-2 bg-slate-300">
            <a href="#apartment" 
                     className="relative col-span-10 sm:col-span-4 sm:row-span-4 
                                 group rounded-lg overflow-hidden bg-cover bg-center 

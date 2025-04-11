@@ -121,3 +121,7 @@
   right: -0.5rem;
   border-radius: 50%;
 }
+.projects{
+  background: url("../public/home\ \(3\).jpeg") no-repeat center center fixed;
+  background-size: cover;
+}

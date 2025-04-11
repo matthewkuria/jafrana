@@ -15,6 +15,7 @@ export const  Footer = () => {
                           <Link href="/services" className='hover:underline'>Services</Link>
                           <Link href="/gallery" className='hover:underline'>Gallery</Link>
                           <Link href="/projects" className='hover:underline'>Projects</Link>
+                          <Link href="/contact-us" className='hover:underline'>Contacts</Link>
                 
                       </div>
                       <div className="flex flex-col items-center justify-end"> 

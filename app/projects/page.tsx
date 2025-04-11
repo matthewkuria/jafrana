@@ -15,7 +15,7 @@ const page = () => {
         </p>  
         
         <p className="">
-          Our projects are a testament to our commitment to quality and excellence. We take pride in our work and strive to exceed our clients' expectations.
+          Our projects are a testament to our commitment to quality and excellence. We take pride in our work and strive to exceed our clients expectations.
         </p>  
         <p className=" mt-4 mb-4">
           Here are some of our recent projects:
@@ -23,7 +23,7 @@ const page = () => {
       </article>
 
       <section className="w-full flex flex-col items-center justify-center">
-        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-3">
+        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-2 p-2">
            <a href="#apartment" 
                     className="relative col-span-10 sm:col-span-4 sm:row-span-4 
                                 group rounded-lg overflow-hidden bg-cover bg-center 

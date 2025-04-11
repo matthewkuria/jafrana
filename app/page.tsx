@@ -1,7 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
-import WhatsappIcon from "./components/WhatsappIcon";
 import WhoWeAre from "./components/WhoWeAre";
 
 export default function Home() {

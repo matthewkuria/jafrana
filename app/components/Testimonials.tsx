@@ -22,14 +22,14 @@ const testimonials = [
     name: 'peter jones',
     job: 'intern',
     img: 'https://www.course-api.com/images/people/person-4.jpeg',
-    feedback: 'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+    feedback: 'The Jafrana Construction Company is the best construction company to do business with. When it comes to time and budget management, they are indeed the best. Highly recommended.',
   },
   {
     id: 4,
     name: 'bill anderson',
     job: 'the boss',
     img: 'https://www.course-api.com/images/people/person-3.jpeg',
-    feedback: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+    feedback: 'The Jafrana Construction Company and the professional team were so wonderful, and the quality of their services was fantastic. ',
   },
 ];
 

@@ -1,13 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
 import { playfairDisplay } from '../fonts/fonts'
-import image1 from "../../public/home (4).jpeg"
-import image2 from "../../public/home (3).jpeg"
-import image3 from "../../public/home (6).jpeg"
-import image4 from "../../public/home (9).jpeg"
-import image5 from "../../public/home (5).jpeg"
-import image6 from "../../public/home (1).jpeg"
-import image7 from "../../public/home (2).jpeg"
 
 const page = () => {
   return (
@@ -31,7 +23,7 @@ const page = () => {
       </article>
 
       <section className="w-full flex flex-col items-center justify-center">
-        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-4">
+        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-3">
            <a href="#apartment" 
                     className="relative col-span-10 sm:col-span-4 sm:row-span-4 
                                 group rounded-lg overflow-hidden bg-cover bg-center 

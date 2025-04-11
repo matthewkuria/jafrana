@@ -10,7 +10,7 @@ const page = () => {
           </div>      
     </section>
     <section className="flex flex-col items-center justify-center w-3/4 md:w-1/2 mx-auto mt-10 mb-10 text-center"> 
-        <p className="">
+        <p className="border-secondary border-l-2">
           At Jafrana Construction Company we provide a comprehensive building service which is delivered through our experienced teams meeting the needs of all clients operating across a wide range of markets.
         </p>
       </section>

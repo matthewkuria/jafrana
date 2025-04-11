@@ -4,6 +4,7 @@ import { bebas_neue } from '../fonts/fonts'
 import construction from '../../public/home (1).jpeg'
 import renovation from "../../public/home (6).jpeg"
 import interior_design from "../../public/home (2).jpeg"
+import water_tank from "../../public/watertank.webp"
 
 const page = () => {
   return (
@@ -14,22 +15,29 @@ const page = () => {
           <Image src={construction} alt="construction" width={200} height={200}
             className='rounded-md h-[200px] w-[300px] service-card-image'
           />
-          <p className="services-title">Construction</p>
-          <p className="">We offer a wide range of construction services to meet your needs.</p>
+          <p className="services-title">House Construction</p>
+          <p className="services-content">We offer a wide range of house construction services to meet your needs.</p>
         </div>
         <div className="service-card">
           <Image src={renovation} alt="construction" width={200} height={200}
             className='rounded-md h-[200px] w-[300px] service-card-image'
           />
           <p className="services-title">Renovation</p>
-          <p className="">We offer a wide range of renovation services to meet your needs.</p>
+          <p className="services-content">We offer a wide range of renovation services to meet your needs.</p>
         </div>
         <div className="service-card">
           <Image src={interior_design} alt="construction" width={200} height={200}
             className='rounded-md h-[200px] w-[300px] service-card-image'
           />
           <p className="services-title">Interior Design</p>
-          <p className="">We offer a wide range of interior design services to meet your needs.</p>
+          <p className="services-content">We offer a wide range of interior design services to meet your needs.</p>
+        </div>
+        <div className="service-card">
+          <Image src={water_tank} alt="construction" width={200} height={200}
+            className='rounded-md h-[200px] w-[300px] service-card-image'
+          />
+          <p className="services-title">Water-Tanks Construction</p>
+          <p className="services-content">We are experts in the construction of both underground and concrete erected water tanks.</p>
         </div>
       </article>
       <aside className="p-5 bg-slate-50 flex flex-col items-center justify-center w-full mt-10 gap-3 mx-10">

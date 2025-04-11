@@ -55,9 +55,8 @@
     min-height: 100vh;
   }
   .service-card{
-  box-shadow: var(--color-secondary) 1px 0px 1px;
+  box-shadow:  10px 10px 30px #aaaaaa;
   border-radius: 10px;
-  background-color: var(--color-quaternary);
   color: var(--color-tertiary);
   display: flex;
   flex-direction: column;
@@ -68,6 +67,15 @@
   width: 300px;
   height: 310px;
   }
+  .service-card:hover{
+    box-shadow:  10px 10px 5px #aaaaaa;
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+.services-content{
+  padding: 10px;
+}
 .service-card-image{
   padding: 10px;
 }

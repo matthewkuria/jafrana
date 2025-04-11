@@ -11,7 +11,7 @@ const Page = () => {
   const [featuredImage, setFeaturedImage] = useState(mainImage)
 
   return (
-    <div className="min-h-screen p-4 mt-20">
+    <main className="flex flex-col items-center justify-center p-4 bg-gray-100">
       {/* Featured Image Section */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-secondary mb-4">Featured Image</h1>
@@ -46,7 +46,7 @@ const Page = () => {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

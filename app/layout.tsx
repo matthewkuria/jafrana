@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import { Footer } from "./components/Footer";
 import { inter, playfairDisplay } from "./fonts/fonts";
+import WhatsappIcon from "./components/WhatsappIcon";
 
 
 
@@ -22,9 +23,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
       </head>
       <body
-        className={`${playfairDisplay.className} ${inter.className} antialiased`}
+        className={`${playfairDisplay.className} ${inter.className} antialiased `}
       >
         <Header />
+        <WhatsappIcon />
         {children}
         <Footer />
       </body>

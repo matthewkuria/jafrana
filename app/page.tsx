@@ -1,11 +1,12 @@
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import WhatsappIcon from "./components/WhatsappIcon";
 import WhoWeAre from "./components/WhoWeAre";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen py-2">
+    <main className="flex flex-col items-center justify-center min-h-screen py-2 relative">
       <section className="p-2 mt-10">
         <HeroSection />
       </section>

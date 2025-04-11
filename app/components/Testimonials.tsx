@@ -26,7 +26,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: 'bill anderson',
+    name: 'bill Mwangi',
     job: 'the boss',
     img: 'https://www.course-api.com/images/people/person-3.jpeg',
     feedback: 'The Jafrana Construction Company and the professional team were so wonderful, and the quality of their services was fantastic. ',

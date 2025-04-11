@@ -11,6 +11,7 @@ export const  Footer = () => {
                     <div className="flex flex-col  w-full md:w-1/2 md:flex-row md:justify-between"> 
                         <div className="flex flex-col gap-4">
                           <p className="footer-title my-5 border-secondary border-b-1">Quick Links</p>
+                          <Link href="/" className='hover:underline'>Home</Link>
                           <Link href="/services" className='hover:underline'>Services</Link>
                           <Link href="/gallery" className='hover:underline'>Gallery</Link>
                           <Link href="/projects" className='hover:underline'>Projects</Link>

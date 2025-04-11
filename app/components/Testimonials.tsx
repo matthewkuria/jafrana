@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: 'anna johnson',
+    name: 'anna Apondi',
     job: 'web designer',
     img: 'https://www.course-api.com/images/people/person-2.jpeg',
     feedback: 'If someone is searching for the best construction company for custom home building. Trust Jafrana Construction Company. They were really very easy to work with.',

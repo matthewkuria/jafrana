@@ -36,7 +36,10 @@ export default function Contacts() {
         </div>
       </div>
       <div className="absolute bottom-30 right-10 p-5">
-        <Link href="https://api.whatsapp.com/send?phone=254722553222&text=Hello%20Jafrana%20Construction%20Company%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
+        <Link href="https://api.whatsapp.com/send?phone=254722553222&text=Hello%20Jafrana%20Construction%20Company%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer"
+        className="flex items-center"
+        >
+          <p className="">Need help? Chat with us</p>
           <Image src={whatsappIcon} height={60} width={60}
           className="animate-pulse" />
         </Link>

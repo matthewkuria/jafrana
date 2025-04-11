@@ -7,7 +7,7 @@
   font-size: 13px;
 }
 @theme {
-  
+
   --color-primary: #000000;
   --color-secondary: #ff6600;
   --color-tertiary: #666666;
@@ -55,7 +55,7 @@
     min-height: 100vh;
   }
   .service-card{
-  box-shadow:  10px 10px 30px #aaaaaa;
+  box-shadow:  10px 10px 50px #cbcaca;
   border-radius: 10px;
   color: var(--color-tertiary);
   display: flex;

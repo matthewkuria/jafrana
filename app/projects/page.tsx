@@ -1,5 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 import { playfairDisplay } from '../fonts/fonts'
+import image1 from "../../public/home (4).jpeg"
+import image2 from "../../public/home (3).jpeg"
+import image3 from "../../public/home (6).jpeg"
+import image4 from "../../public/home (9).jpeg"
+import image5 from "../../public/home (5).jpeg"
+import image6 from "../../public/home (1).jpeg"
+import image7 from "../../public/home (2).jpeg"
 
 const page = () => {
   return (
@@ -9,11 +17,71 @@ const page = () => {
             <p className={`${playfairDisplay.className} text-secondary text-3xl md:text-4xl lg:text-5xl `}>Our Projects</p>
           </div>      
     </section>
-    <section className="flex flex-col items-center justify-center w-3/4 md:w-1/2 mx-auto mt-10 mb-10 text-center"> 
-        <p className="border-secondary border-l-2">
+    <article className="flex flex-col items-center justify-center w-3/4 md:w-1/2 mx-auto mt-10 mb-10 text-center border-secondary border-l-2"> 
+        <p className="p-2">
           At Jafrana Construction Company we provide a comprehensive building service which is delivered through our experienced teams meeting the needs of all clients operating across a wide range of markets.
+        </p>  
+        
+        <p className="">
+          Our projects are a testament to our commitment to quality and excellence. We take pride in our work and strive to exceed our clients' expectations.
+        </p>  
+        <p className=" mt-4 mb-4">
+          Here are some of our recent projects:
         </p>
+      </article>
+
+      <section className="w-full flex flex-col items-center justify-center">
+        <div className="w-full h-[80vh] grid grid-cols-10 grid-rows-4 gap-4">
+           <a href="#apartment" 
+                    className="relative col-span-10 sm:col-span-4 sm:row-span-4 
+                                group rounded-lg overflow-hidden bg-cover bg-center 
+                                flex items-center justify-center shadow-xl hover:shadow-2xl"
+                    style={{ backgroundImage: "url('/home (9).jpeg')" }}>
+                    <span className="absolute bottom-0 w-full backdrop-blur-md bg-opacity-60 
+                                    text-white text-lg text-center py-2 opacity-100 sm:opacity-0 
+                                    sm:group-hover:opacity-100 transition-opacity">
+                        Apartment
+                    </span>
+              </a>
+
+                    <a href="#interior" 
+                    className="relative col-span-10 sm:col-span-4 sm:row-span-2 
+                                group rounded-lg overflow-hidden bg-cover bg-center 
+                                flex items-center justify-center hover:shadow-lg"
+                    style={{ backgroundImage: "url('/hero-image.jpeg')" }}>
+                    <span className="absolute bottom-0 w-full backdrop-blur-md bg-opacity-60 
+                                    text-white text-lg text-center py-2 opacity-100 sm:opacity-0 
+                                    sm:group-hover:opacity-100 transition-opacity">
+                       Interior Design
+                    </span>
+                    </a>
+
+                    <a href="#bungalow" 
+                    className="relative col-span-10 sm:col-span-2 sm:row-span-2 
+                                group rounded-lg overflow-hidden bg-cover bg-local bg-bottom 
+                                flex items-center justify-center"
+                    style={{ backgroundImage: "url('/home (1).jpeg')" }}>
+                    <span className="absolute bottom-0 w-full backdrop-blur-md bg-opacity-60 
+                                    text-white text-lg text-center py-2 opacity-100 sm:opacity-0 
+                                    sm:group-hover:opacity-100 transition-opacity">
+                      Bungalow
+                    </span>
+                    </a>
+
+                    <a href="#rentals" 
+                    className="relative col-span-10 sm:col-span-6 sm:row-span-2 
+                                group rounded-lg overflow-hidden bg-cover bg-local bg-center
+                                flex items-center justify-center"
+                    style={{ backgroundImage: "url('/home (8).jpeg')" }}>
+                    <span className="absolute bottom-0 w-full backdrop-blur-xs bg-opacity-60 
+                                    text-white text-lg text-center py-2 opacity-100 sm:opacity-0 
+                                    sm:group-hover:opacity-100 transition-opacity">
+                        Rentals
+                    </span>
+                </a>
+        </div>
       </section>
+      
     </main>
   )
 }

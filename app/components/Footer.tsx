@@ -5,7 +5,7 @@ import Image from 'next/image'
 import jafranaHomeLogo from "../../public/home-icon.png";
 export const  Footer = () => {
   return (
-    <section className={`bg-slate-900 text-xs text-white p-1`}>
+    <section className={`relative bg-slate-900 text-xs text-white p-1`}>
          <div className="flex flex-col md:flex md:flex-row mx-auto md:justify-between p-4 items-baseline">
                 <div className="contact flex flex-col w-full items-center justify-center md:w-1/2">
                     <div className="flex flex-col  w-full md:w-1/2 md:flex-row md:justify-between"> 
@@ -18,10 +18,9 @@ export const  Footer = () => {
                           <Link href="/contact-us" className='hover:underline'>Contacts</Link>
                 
                       </div>
-                      <div className="flex flex-col items-center justify-end"> 
-                          <Image src={jafranaHomeLogo} alt="Jafrana construction  logo" width={100} height={100} className="w-[100px] h-[100px]" />
-                          <p className="text-secondary text-2xl font-semibold uppercase">Jafrana</p>
-                      </div>
+                        <div className="absolute -top-14 left-1/2 transform -translate-x-1/2 flex flex-col items-center justify-end"> 
+                          <Image src={jafranaHomeLogo} alt="Jafrana construction logo" width={100} height={100} className="w-[100px] h-[100px] bg-amber-50 rounded-full" />
+                        </div>
                     </div>
                 </div>               
                 <div className="support flex flex-col w-full md:w-1/4 justify-end mx-5 ">

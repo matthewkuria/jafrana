@@ -8,28 +8,28 @@ const testimonials = [
     name: 'susan smith',
     job: 'web developer',
     img: 'https://www.course-api.com/images/people/person-1.jpeg',
-    feedback: " I took the construction services from Jafrana Construction Company recently and was amazed by their quality craftsmanship. They finished the work within the given timeframe without compromising quality.",
+    feedback: " I took the construction services from Jafrana Construction Works recently and was amazed by their quality craftsmanship. They finished the work within the given timeframe without compromising quality.",
   },
   {
     id: 2,
     name: 'anna Apondi',
     job: 'web designer',
     img: 'https://www.course-api.com/images/people/person-2.jpeg',
-    feedback: 'If someone is searching for the best construction company for custom home building. Trust Jafrana Construction Company. They were really very easy to work with.',
+    feedback: 'If someone is searching for the best construction Works for custom home building. Trust Jafrana Construction Works. They were really very easy to work with.',
   },
   {
     id: 3,
     name: 'peter jones',
     job: 'intern',
     img: 'https://www.course-api.com/images/people/person-4.jpeg',
-    feedback: 'The Jafrana Construction Company is the best construction company to do business with. When it comes to time and budget management, they are indeed the best. Highly recommended.',
+    feedback: 'The Jafrana Construction Works is the best construction Works to do business with. When it comes to time and budget management, they are indeed the best. Highly recommended.',
   },
   {
     id: 4,
     name: 'bill Mwangi',
     job: 'the boss',
     img: 'https://www.course-api.com/images/people/person-3.jpeg',
-    feedback: 'The Jafrana Construction Company and the professional team were so wonderful, and the quality of their services was fantastic. ',
+    feedback: 'The Jafrana Construction Works and the professional team were so wonderful, and the quality of their services was fantastic. ',
   },
 ];
 

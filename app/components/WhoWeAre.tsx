@@ -21,9 +21,9 @@ const WhoWeAre = () => {
                 </div>
             <div className="flex flex-col justify-start  items-start  md:max-w-1/2 mt-5">
                 <p className={`${bebas_neue.className} text-2xl text-secondary`}>Who Are We?</p>
-                <p className="text-black font-semibold">We Are The Best Construction Company</p>
+                <p className="text-black font-semibold">We Are The Best Construction Works</p>
                 <p className="text-tertiary">
-                    At Jafrana Construction Company,
+                    At Jafrana Construction Works,
                     we are passionate about turning your visions into reality.
                     With years of experience in the construction industry,
                     we pride ourselves on delivering high-quality craftsmanship,
@@ -44,7 +44,7 @@ const WhoWeAre = () => {
                     <p className={`${bebas_neue.className} text-2xl text-secondary`}>Why Choose Us?</p>
                     <p className="text-primary font-semibold">Client Satsifaction</p>
                     <p className="text-tertiary">
-                    At Jafrana Construction Company,
+                    At Jafrana Construction Works,
                     Our clients are at the heart of everything we do.
                     We strive to exceed expectations by understanding
                     their unique needs and delivering tailored solutions.

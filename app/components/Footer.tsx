@@ -36,7 +36,7 @@ export const  Footer = () => {
                 </div>                
             </div>
           <div className="flex justify-center items-center text-xs p-4">
-              <p className="">&copy;<span className='font-semibold px-0.5'>Jafrana Construction Company ||</span>2025. All rights reserved.</p>
+              <p className="">&copy;<span className='font-semibold px-0.5'>Jafrana Construction Works ||</span>2025. All rights reserved.</p>
           </div>
     </section>
   )

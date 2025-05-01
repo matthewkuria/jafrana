@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import FontAwesome icons
 
@@ -60,11 +61,14 @@ const Testimonials = () => {
               className="bg-white p-4 rounded shadow-md text-center flex-shrink-0 w-80"
             >
               <div className="img-container">
-                <img
+                <Image
                   src={testimonials[currentIndex].img}
                   alt={`${testimonials[currentIndex].name}'s photo`}
                   className="w-16 h-16 rounded-full mx-auto mb-4"
                   id="person-img"
+                  width={64}
+                  height={64}
+                  priority={true} // Load this image first
                 />
               </div>
               <p className="text-lg font-semibold text-secondary uppercase">

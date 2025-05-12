@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react'
+import Gallery from '../components/Gallery'
 import Image from 'next/image'
 import mainImage from "../../public/hero-image.jpeg"
 import image1 from "../../public/home (1).jpeg"
@@ -12,40 +13,8 @@ const Page = () => {
 
   return (
     <main className="flex flex-col items-center justify-center p-4 bg-gray-100">
-      {/* Featured Image Section */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-secondary mb-4">Featured Image</h1>
-        <div className="relative">
-          <Image
-            width={800}
-            height={400}
-            className="h-auto max-w-full rounded-lg shadow-lg"
-            src={featuredImage}
-            alt="Featured Image"
-          />
-          <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded">
-            <p>Our Latest Project</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Image Gallery Section */}
-      <div>
-        <h2 className="text-2xl font-bold text-secondary mb-4">Gallery</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[image1, image2, image3, image4].map((image, index) => (
-            <div key={index} onClick={() => setFeaturedImage(image)} className="cursor-pointer">
-              <Image
-                width={300}
-                height={300}
-                className="h-auto max-w-full rounded-lg shadow-md"
-                src={image}
-                alt={`Gallery Image ${index + 1}`}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <h1 className="text-3xl font-bold text-center my-8">Image Gallery</h1>
+      <Gallery />
     </main>
   )
 }

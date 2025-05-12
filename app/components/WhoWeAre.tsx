@@ -11,7 +11,7 @@ const WhoWeAre = () => {
             <div className=" flex flex-col-reverse md:flex md:flex-row md:justify-between  p-3 ">
                 <div className="flex flex-col items-center justify-center p-2 relative m-1 ">
                     <div className="absolute bg-secondary w-[280px] h-[36px]  -top-2 -left-3 z-0"></div>
-                    <Image src={heroImage} alt="hero" width="0" height="0" sizes="100vw"
+                    <Image src={heroImage} alt="hero-image at Jafrana Construction Works" width="0" height="0" sizes="100vw"
                         className='h-auto w-full shadow-secondary shadow-xs z-20'/>
                     <div className="absolute bg-secondary w-[280px] h-[20px]  -bottom-3 -right-1 z-0"></div>
                     <div className="absolute bg-primary w-[120px] h-[80px]  -bottom-3 -right-1 z-20 flex flex-col items-center justify-center">

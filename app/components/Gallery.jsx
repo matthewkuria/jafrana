@@ -5,8 +5,14 @@ import Image from 'next/image';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
+import 'lightgallery/css/lg-autoplay.css';
+import 'lightgallery/css/lg-fullscreen.css';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgAutoplay from 'lightgallery/plugins/autoplay';
+import lgFullscreen from 'lightgallery/plugins/fullscreen';
+
+
 
 const images = [
   { src: '/home (1).jpeg', alt: 'Image 1', thumb: '/home (1).jpeg' },
@@ -27,8 +33,11 @@ export default function Gallery() {
     <div className="container mx-auto px-4 py-8">
       <LightGallery
         speed={500}
-        plugins={[lgZoom, lgThumbnail]}
-        elementClassNames="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        plugins={[lgZoom, lgThumbnail, lgAutoplay, lgFullscreen]}
+        autoplay={{ autoplay: true, pause: 2000 }}
+        showCloseIcon={true}
+        progressBar={true}
+        elementClassNames="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2"
       >
         {images.map((image, index) => (
           <a
@@ -38,16 +47,17 @@ export default function Gallery() {
             data-sub-html={`<h4>${image.alt}</h4>`}
             aria-label={`View ${image.alt} in lightbox`}
           >
+             <div className="relative w-full aspect-[16/9]">
             <Image
               src={image.src}
-              alt={image.alt}
-              width={400}
-              height={300}
+              alt={image.alt}              
+              fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
               placeholder="blur"
               blurDataURL="/placeholder.jpg" // Optional: Add a low-res placeholder
             />
+            </div>
           </a>
         ))}
       </LightGallery>
